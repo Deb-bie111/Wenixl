@@ -1,0 +1,6 @@
+{
+  "name": "Later.",
+  "description": "A private digital time capsule to write letters, memories, promises, and reflections for your future self.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

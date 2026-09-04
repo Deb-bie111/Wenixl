@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Playfair Display", "Newsreader", Georgia, serif;
+  
+  --color-olive-950: #161D13;
+  --color-olive-900: #1F2A1A;
+  --color-olive-850: #273521;
+  --color-olive-800: #32432A;
+  --color-olive-700: #425838;
+  --color-olive-600: #557048;
+  --color-olive-500: #6B8A5B;
+  --color-olive-400: #8DA87E;
+  --color-olive-300: #B7CCA9;
+  --color-olive-200: #D3DFCA;
+  --color-olive-100: #E6EEE0;
+  --color-olive-50: #F3F7EF;
+  
+  --color-canvas: #F4F6F1;
+  --color-canvas-subtle: #EBF0E6;
+  --color-canvas-card: #FAFBF8;
+  --color-canvas-border: #D5DFCE;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F4F6F1;
+    color: #1F2A1A;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Subtle botanical parchment grain simulation */
+.paper-texture {
+  background-color: #F4F6F1;
+  background-image: radial-gradient(#273521 0.45px, transparent 0.45px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.letter-sheet {
+  box-shadow: 0 6px 28px -4px rgba(31, 42, 26, 0.07), 0 2px 6px rgba(31, 42, 26, 0.03);
+}
+
+/* Botanical Olive Wax seal styling */
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #59734A, #283720 85%);
+  box-shadow: 0 6px 16px rgba(39, 53, 33, 0.38), inset 0 2px 3px rgba(255, 255, 255, 0.25), inset 0 -2px 5px rgba(0, 0, 0, 0.45);
+}
+
+.wax-seal-terracotta {
+  background: radial-gradient(circle at 35% 35%, #A64B34, #662615 85%);
+  box-shadow: 0 6px 16px rgba(102, 38, 21, 0.35), inset 0 2px 3px rgba(255, 255, 255, 0.25), inset 0 -2px 5px rgba(0, 0, 0, 0.45);
+}
+
